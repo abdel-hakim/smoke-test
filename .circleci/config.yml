@@ -11,9 +11,9 @@ jobs:
             URL="https://blog.udacity.com/"
             if curl -s --head ${URL}
             then
-              retern 0
+              return 0
             else
-              retern 1
+              return 1
             fi
 workflows:
   myworkflow:
